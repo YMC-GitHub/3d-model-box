@@ -24,7 +24,7 @@ START_TIME=0 #-ss 0
 #-t 10
 #文件类型
 #-f gif
-ffmpeg -i "$src" -f gif   "$des"
+ffmpeg -i "$src" -f gif "$des"
 
 ## file-usage
 # ./scripts/make-sreenshot.sh
