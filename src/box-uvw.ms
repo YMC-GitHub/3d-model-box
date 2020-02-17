@@ -1,4 +1,4 @@
-boxGood = box()
+-- boxGood = box()
 select boxGood
 
 -- 展开
@@ -29,13 +29,14 @@ subobjectLevel = 2
 -- gui-快剥
 -- 松弛线
 
-
+/*
 --让模型“呈现出方格像素块”
 $.modifiers[#unwrap_uvw].unwrap.setCurrentMap 1
 -- 调整大小、位置、角度
 $.modifiers[#unwrap_uvw].unwrap.move ()
 $.modifiers[#unwrap_uvw].unwrap.rotate ()
 $.modifiers[#unwrap_uvw].unwrap.scale ()
+*/
 
 -- 导出uv图片
 /*
@@ -50,8 +51,11 @@ $.modifiers[#unwrap_uvw].unwrap5.renderUV ""
 
 -- 用uv图片做材质
 /*
+-- -----------------   config   -------------
 PROJECT_PATH="D:\\code-store\\maxscript\\3d-model-box"
 TEXTURE_PATH=PROJECT_PATH+"\\dist\\texture\\"
+
+-- -----------------   type   ---------------
 file =TEXTURE_PATH+  "animal.jpg"
 myMat= Standardmaterial ()
 myMat.diffuseMap = Bitmaptexture fileName:file
